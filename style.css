@@ -1,0 +1,66 @@
+.bg-black {
+    background-color: #212121;
+}
+
+.navbar {
+    background-color: #4472c4;
+}
+
+.nav-item{
+    margin-top: 50px;
+    background-color: #212121;
+    color: white;
+}
+
+.sub-menu {
+    margin-top: -170px;
+    margin-right: -185px;
+    z-index: 1;
+    background-color: #212121;
+    color: #fff;
+    padding: 30px 15px 30px 15px;
+    display: none;
+}
+
+.sub-menu-item {
+    background-color: #70ad47;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.arrival-info {
+    margin-top: -50px;
+    margin-left: 10%;
+}
+
+.unloading-info {
+    margin-top: -50px;
+    margin-left: 32%;
+}
+
+
+.loading-info {
+    margin-top: -50px;
+    margin-left: 60%;
+}
+
+.departure-info {
+    margin-top: -50px;
+    margin-left: 85%;
+}
+.dot {
+    border: 5px solid #e7e6e6;
+}
+
+.bg-blue {
+    background-color: #4472c4;
+}
+
+.bg-grey {
+    background-color: #e7e6e6;
+}
+
+.bg-green {
+    background-color: #00b050;
+}

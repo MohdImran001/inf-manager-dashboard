@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Manager Dashboard</title>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+        <style>
+            .mapouter{
+                height:100%;
+                width:100%;
+            }
+            .gmap_canvas {
+                overflow:hidden;
+                background:none!important;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid grid-cols-6">
+
+            <div class="text-center p-4 pt-16 navbar h-screen">
+                <ul class="menu">
+                    <li class="rounded-full py-3 px-2 nav-item">
+                        Warehouse Inventory Status
+                    </li>
+                    <li class="rounded-full py-3 px-2 nav-item relative tasks">
+                        Tasks
+                        <ul class="sub-menu absolute right-0 rounded-md">
+                            <li class="rounded-md py-2 px-2 sub-menu-item">
+                                Today's Tasks
+                            </li>
+                            <li class="rounded-md py-2 px-2 sub-menu-item">
+                                Future Tasks
+                            </li>
+                            <li class="rounded-md py-2 px-2 sub-menu-item">
+                                Completed Tasks
+                            </li>
+                            <li class="rounded-md py-2 px-2 sub-menu-item">
+                                Rejected Tasks
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="rounded-full py-3 px-2 nav-item">
+                        Reports
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-span-5 relative">
+                <div class="name-tag absolute top-0 right-0">
+                    <p class="bg-black text-white px-2 py-2 rounded-md"> Welcome, Mr Manager</p>
+                </div>
+
+
+
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe class="w-screen h-screen" id="gmap_canvas" src="https://maps.google.com/maps?q=jamia%20hamdard%20university&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="./app.js">
+        </script>
+    </body>
+</html>

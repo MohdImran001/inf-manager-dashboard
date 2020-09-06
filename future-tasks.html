@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Manager Dashboard</title>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+        <style>
+            .mapouter{
+                height:100%;
+                width:100%;
+            }
+            .gmap_canvas {
+                overflow:hidden;
+                background:none!important;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid grid-cols-6">
+
+            <div class="text-center p-4 pt-16 navbar h-screen">
+                <ul class="menu">
+                    <li class="rounded-full py-3 px-2 nav-item">
+                        Warehouse Inventory Status
+                    </li>
+                    <li class="rounded-full py-3 px-2 nav-item relative tasks">
+                        Tasks
+                        <ul class="sub-menu absolute right-0 rounded-md">
+                            <li class="rounded-md py-2 px-2 sub-menu-item">
+                                <a href="./today-tasks.html">Today Tasks</a>
+                            </li>
+                            <li class="rounded-md py-2 px-2 sub-menu-item">
+                                <a href="./future-tasks.html">Future Tasks</a>
+                            </li>
+                            <li class="rounded-md py-2 px-2 sub-menu-item">
+                                Completed Tasks
+                            </li>
+                            <li class="rounded-md py-2 px-2 sub-menu-item">
+                                Rejected Tasks
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="rounded-full py-3 px-2 nav-item">
+                        Reports
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-span-5 text-center pt-12">
+                <p class="p-2 rounded-md bg-blue text-white w-48 m-auto">FUTURE TASKS</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <!-- List of vehicles -->
+                <div class="vehciles ml-10 mr-10 m-auto">
+
+                    <!-- Vehicle 1 Data -->
+
+                    <div class="grid grid-cols-8 gap-3">
+
+                        <div class="number-plate h-8">
+                            <p class="bg-black text-white p-1 py-2 rounded-md">RJ 02 GB 4327</p>
+                        </div>
+
+                        <div class="progress-bar col-span-5 h-8 relative">
+
+                            <div class="progress-bar w-full h-3 bg-grey rounded-full mt-3">
+                                <!-- increase the width of this bar to increase progress -->
+                                <div class="progress bg-green w-0 h-3 rounded-full ">
+
+                                </div>
+                            </div>
+
+                            <div class="arrival-info text-small absolute top-0 text-center">
+                                <p>Arrival</p>
+                                <p>9:30 AM</p>
+                                <div class="bg-white h-6 w-6 rounded-full m-auto mt-2 dot">
+
+                                </div>
+                            </div>
+
+                            <div class="unloading-info text-small absolute top-0 text-center">
+                                <p>Unloading</p>
+                                <p>10:30 AM</p>
+                                <div class="bg-white h-6 w-6 rounded-full m-auto mt-2 dot">
+
+                                </div>
+                            </div>
+
+                            <div class="loading-info text-small absolute top-0 text-center">
+                                <p>Loading</p>
+                                <p>12:30 AM</p>
+                                <div class="bg-white h-6 w-6 rounded-full m-auto mt-2 dot">
+
+                                </div>
+                            </div>
+
+
+                            <div class="departure-info text-small absolute top-0 text-center">
+                                <p>Departure</p>
+                                <p>01:30 AM</p>
+                                <div class="bg-white h-6 w-6 rounded-full m-auto mt-2 dot">
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="confirmed-btn h-8">
+                            <p class="bg-black text-white p-1 py-2 rounded-md">CONFIRMED</p>
+                        </div>
+
+                        <div class="done-btn h-8">
+                            <p class="bg-black text-white p-1 py-2 rounded-md">DONE BY SUPERVISOR</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Vehicle 1 Data -->
+
+                    <!-- Vehicle 2 Data -->
+
+                    <div class="grid grid-cols-8 gap-3 mt-32">
+
+                        <div class="number-plate h-8">
+                            <p class="bg-black text-white p-1 py-2 rounded-md">RJ 02 GB 4327</p>
+                        </div>
+
+                        <div class="progress-bar col-span-5 h-8 relative">
+
+                            <div class="progress-bar w-full h-3 bg-grey rounded-full mt-3">
+                                <!-- increase the width of this bar to increase progress -->
+                                <div class="progress bg-green w-0 h-3 rounded-full ">
+
+                                </div>
+                            </div>
+
+                            <div class="arrival-info text-small absolute top-0 text-center">
+                                <p>Arrival</p>
+                                <p>9:30 AM</p>
+                                <div class="bg-white h-6 w-6 rounded-full m-auto mt-2 dot">
+
+                                </div>
+                            </div>
+
+                            <div class="unloading-info text-small absolute top-0 text-center">
+                                <p>Unloading</p>
+                                <p>10:30 AM</p>
+                                <div class="bg-white h-6 w-6 rounded-full m-auto mt-2 dot">
+
+                                </div>
+                            </div>
+
+                            <div class="loading-info text-small absolute top-0 text-center">
+                                <p>Loading</p>
+                                <p>12:30 AM</p>
+                                <div class="bg-white h-6 w-6 rounded-full m-auto mt-2 dot">
+
+                                </div>
+                            </div>
+
+
+                            <div class="departure-info text-small absolute top-0 text-center">
+                                <p>Departure</p>
+                                <p>01:30 AM</p>
+                                <div class="bg-white h-6 w-6 rounded-full m-auto mt-2 dot">
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="confirmed-btn h-8">
+                            <p class="bg-black text-white p-1 py-2 rounded-md">CONFIRMED</p>
+                        </div>
+
+                        <div class="done-btn h-8">
+                            <p class="bg-black text-white p-1 py-2 rounded-md">DONE BY SUPERVISOR</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Vehicle 2 Data -->
+
+                    <!-- Vehicle 3 Data -->
+
+                    <div class="grid grid-cols-8 gap-3 mt-32">
+
+                        <div class="number-plate h-8">
+                            <p class="bg-black text-white p-1 py-2 rounded-md">RJ 02 GB 4327</p>
+                        </div>
+
+                        <div class="progress-bar col-span-5 h-8 relative">
+
+                            <div class="progress-bar w-full h-3 bg-grey rounded-full mt-3">
+                                <!-- increase the width of this bar to increase progress -->
+                                <div class="progress bg-green w-0 h-3 rounded-full ">
+
+                                </div>
+                            </div>
+
+                            <div class="arrival-info text-small absolute top-0 text-center">
+                                <p>Arrival</p>
+                                <p>9:30 AM</p>
+                                <div class="bg-white h-6 w-6 rounded-full m-auto mt-2 dot">
+
+                                </div>
+                            </div>
+
+                            <div class="unloading-info text-small absolute top-0 text-center">
+                                <p>Unloading</p>
+                                <p>10:30 AM</p>
+                                <div class="bg-white h-6 w-6 rounded-full m-auto mt-2 dot">
+
+                                </div>
+                            </div>
+
+                            <div class="loading-info text-small absolute top-0 text-center">
+                                <p>Loading</p>
+                                <p>12:30 AM</p>
+                                <div class="bg-white h-6 w-6 rounded-full m-auto mt-2 dot">
+
+                                </div>
+                            </div>
+
+
+                            <div class="departure-info text-small absolute top-0 text-center">
+                                <p>Departure</p>
+                                <p>01:30 AM</p>
+                                <div class="bg-white h-6 w-6 rounded-full m-auto mt-2 dot">
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="confirmed-btn h-8">
+                            <p class="bg-black text-white p-1 py-2 rounded-md">CONFIRMED</p>
+                        </div>
+
+                        <div class="done-btn h-8">
+                            <p class="bg-black text-white p-1 py-2 rounded-md">DONE BY SUPERVISOR</p>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Vehicle 3 Data -->
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="./app.js">
+        </script>
+    </body>
+</html>
