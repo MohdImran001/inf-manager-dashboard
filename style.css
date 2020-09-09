@@ -49,6 +49,47 @@
     margin-top: -50px;
     margin-left: 85%;
 }
+
+.bypass, .load-popup {
+    margin-left: 5%;
+    z-index: 1;
+    width: 90%;
+    height: 80%;
+    border-radius: 50px;
+}
+
+.bypass-reason-input {
+    background-color: #212121;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+
+.table-fixed tr, td, th {
+    border: none;
+}
+
+table td, th {
+    padding: 10px 50px 10px 50px;
+    border: none;
+    text-align: center;
+}
+
+table th > p {
+    background-color: #4472c4;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+table td > p {
+    background-color: #4472c4;
+    color: white;
+    border-radius: 7px;
+    padding: 5px 10px 5px 10px;
+}
+
 .dot {
     border: 5px solid #e7e6e6;
 }
@@ -63,4 +104,16 @@
 
 .bg-green {
     background-color: #00b050;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.pointer {
+    cursor: pointer
+}
+
+.table-fixed  tr, td, th {
+    border: 1px solid #eee;
 }

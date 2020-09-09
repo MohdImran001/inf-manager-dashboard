@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Manager Dashboard</title>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="grid grid-cols-6">
+
+            <div class="text-center p-4 pt-16 navbar h-screen">
+                <ul class="menu">
+                    <li class="rounded-full py-3 px-2 nav-item">
+                        Warehouse Inventory Status
+                    </li>
+                    <li class="rounded-full py-3 px-2 nav-item relative tasks">
+                        Tasks
+                        <ul class="sub-menu absolute right-0 rounded-md">
+                            <li class="rounded-md py-2 px-2 sub-menu-item">
+                                <a href="./today-tasks.html">Today Tasks</a>
+                            </li>
+                            <li class="rounded-md py-2 px-2 sub-menu-item">
+                                <a href="./future-tasks.html">Future Tasks</a>
+                            </li>
+                            <li class="rounded-md py-2 px-2 sub-menu-item">
+                                <a href="./completed-tasks.html">Completed Tasks</a>
+                            </li>
+                            <li class="rounded-md py-2 px-2 sub-menu-item">
+                                <a href="./rejected-tasks.html">Rejected Tasks</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="rounded-full py-3 px-2 nav-item">
+                        Reports
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-span-5 relative pt-10">
+                <p class="p-2 rounded-md bg-blue text-white w-48 m-auto text-center">COMPLETED TASKS</p>
+                <br>
+                <table class="mx-auto">
+                    <thead>
+                        <tr>
+                            <th style="border:none">
+                                <p>Task ID</p>
+                            </th>
+                            <th style="border:none">
+                                <p>Vehicle No.</p>
+                            </th>
+                            <th style="border:none">
+                                <p>Done by</p>
+                            </th>
+                            <th style="border:none">
+                                <p>Remarks</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p>123</p>
+                            </td>
+                            <td>
+                                <p class="bg-black"> RJ 01S 4589 </p>
+                            </td>
+                            <td>
+                                <p>Name of Supervisor</p>
+                            </td>
+                            <td>
+                                <p>ndk.gnkslnglns</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>123</p>
+                            </td>
+                            <td>
+                                <p class="bg-black"> RJ 01S 4589 </p>
+                            </td>
+                            <td>
+                                <p>Name of Supervisor</p>
+                            </td>
+                            <td>
+                                <p>klnsgknsklnglsnlng</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>123</p>
+                            </td>
+                            <td>
+                                <p class="bg-black"> RJ 01S 4589 </p>
+                            </td>
+                            <td>
+                                <p>Name of Supervisor</p>
+                            </td>
+                            <td>
+                                <p>kndglnslnglsnd</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>123</p>
+                            </td>
+                            <td>
+                                <p class="bg-black"> RJ 01S 4589 </p>
+                            </td>
+                            <td>
+                                <p>Name of Supervisor</p>
+                            </td>
+                            <td>
+                                <p>kldngsndlgnlsdlg</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="go-back-btn mt-10 text-right mr-10">
+                    <a href="./index.html" class="bg-blue rounded-full p-3 text-white pointer">Go Back</a>
+                </div>
+            </div>
+
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="./app.js">
+        </script>
+    </body>
+</html>
