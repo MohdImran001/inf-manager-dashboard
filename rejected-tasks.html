@@ -4,58 +4,91 @@
         <meta charset="utf-8">
         <title>Manager Dashboard</title>
         <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
         <div class="grid grid-cols-6">
 
-            <div class="text-center p-4 pt-16 navbar h-screen">
-                <ul class="menu">
-                    <li class="rounded-full py-3 px-2 nav-item">
-                        Warehouse Inventory Status
-                    </li>
-                    <li class="rounded-full py-3 px-2 nav-item relative tasks">
-                        Tasks
-                        <ul class="sub-menu absolute right-0 rounded-md">
-                            <li class="rounded-md py-2 px-2 sub-menu-item">
-                                <a href="./today-tasks.html">Today Tasks</a>
-                            </li>
-                            <li class="rounded-md py-2 px-2 sub-menu-item">
-                                <a href="./future-tasks.html">Future Tasks</a>
-                            </li>
-                            <li class="rounded-md py-2 px-2 sub-menu-item">
-                                <a href="./completed-tasks.html">Completed Tasks</a>
-                            </li>
-                            <li class="rounded-md py-2 px-2 sub-menu-item">
-                                <a href="./rejected-tasks.html">Rejected Tasks</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="rounded-full py-3 px-2 nav-item">
-                        Reports
-                    </li>
-                </ul>
+            <!-- Side Navigation -->
+            <div class="side-nav   pr-6 pt-8 text-right">
+                <div class="brand-logo ">
+                    <img src="./assets/icons/brand_logo.png" class="w-24 inline" alt="Haul Logo">
+                </div>
+                <div class="today-tasks mt-10 flex flex-row">
+                    <div class="w-1 bg-orange h-16 hidden rounded ml-auto -mr-16"></div>
+
+                    <!-- &nbsp;&nbsp;&nbsp; -->
+
+                    <div class=" ml-auto pt-2 text-sm rounded-md navs text-center " >
+                        <a href="./today-tasks.html" class="text-grey">
+                            <img src="./assets/icons/ic_today_task_off.svg"  class="inline" alt="Today Tasks">
+                            <br>
+
+                            <b>Today Tasks</b>
+                        </a>
+                    </div>
+                </div>
+                <div class="future-tasks mt-10 flex flex-row">
+                    <div class="w-1 bg-orange h-16 hidden rounded ml-auto -mr-16"></div>
+
+                    &nbsp;&nbsp;&nbsp;
+
+                    <div class=" ml-auto pt-2 pb-2 text-sm rounded-md navs text-center">
+                        <a href="./future-tasks.html" class="text-grey">
+                            <img src="./assets/icons/ic_future_task_icon.svg"  class="inline" alt="Future Tasks">
+                            <br>
+                            <b>Future Tasks</b>
+                        </a>
+                    </div>
+                </div>
+                <div class="completed-tasks mt-10 flex flex-row">
+                    <div class="w-1 bg-orange h-16 hidden rounded ml-auto -mr-16"></div>
+
+                    &nbsp;&nbsp;&nbsp;
+
+                    <div class=" ml-auto pt-2 text-sm rounded-md navs text-center">
+                        <a href="./completed-tasks.html" class="">
+                            <img src="./assets/icons/ic_completed_task_icon.svg"  class="inline" alt="Completed Tasks">
+                            <br>
+                            <b>Completed</b>
+                        </a>
+                    </div>
+                </div>
+                <div class="rejected-tasks mt-10 flex flex-row">
+                    <div class="w-1 bg-orange h-16  rounded ml-auto  -mr-16"></div>
+
+                    &nbsp;&nbsp;&nbsp;
+
+                    <div class=" ml-auto pt-2 text-sm rounded-md navs text-center nav-active">
+                        <a href="./rejected-tasks.html" class="">
+                            <img src="./assets/icons/ic_rejected_task_icon_on.svg"  class="inline " alt="Rejected Tasks">
+                            <br>
+                            <b>Rejected</b>
+                        </a>
+                    </div>
+                </div>
             </div>
+            <!-- Side navigation -->
 
             <div class="col-span-5 relative pt-10">
-                <p class="p-2 rounded-md bg-blue text-white w-48 m-auto text-center">REJECTED TASKS</p>
+                <p class="p-2 rounded-md text-white bg-orange w-48 m-auto text-center font-bold">REJECTED TASKS</p>
                 <br>
                 <table class="mx-auto">
                     <thead>
                         <tr>
-                            <th style="border:none">
+                            <th >
                                 <p>Task ID</p>
                             </th>
-                            <th style="border:none">
+                            <th >
                                 <p>Vehicle No.</p>
                             </th>
-                            <th style="border:none">
+                            <th >
                                 <p>Done by</p>
                             </th>
-                            <th style="border:none">
+                            <th >
                                 <p>Action</p>
                             </th>
-                            <th style="border:none">
+                            <th >
                                 <p>Reason</p>
                             </th>
                         </tr>
@@ -66,7 +99,7 @@
                                 <p>123</p>
                             </td>
                             <td>
-                                <p class="bg-black"> RJ 01S 4589 </p>
+                                <p > RJ 01S 4589 </p>
                             </td>
                             <td>
                                 <p>Name of Supervisor</p>
@@ -83,7 +116,7 @@
                                 <p>123</p>
                             </td>
                             <td>
-                                <p class="bg-black"> RJ 01S 4589 </p>
+                                <p > RJ 01S 4589 </p>
                             </td>
                             <td>
                                 <p>Name of Supervisor</p>
@@ -100,7 +133,7 @@
                                 <p>123</p>
                             </td>
                             <td>
-                                <p class="bg-black"> RJ 01S 4589 </p>
+                                <p > RJ 01S 4589 </p>
                             </td>
                             <td>
                                 <p>Name of Supervisor</p>
@@ -117,7 +150,7 @@
                                 <p>123</p>
                             </td>
                             <td>
-                                <p class="bg-black"> RJ 01S 4589 </p>
+                                <p > RJ 01S 4589 </p>
                             </td>
                             <td>
                                 <p>Name of Supervisor</p>
@@ -133,14 +166,14 @@
                 </table>
 
                 <div class="go-back-btn mt-10 text-right mr-10">
-                    <a href="./index.html" class="bg-blue rounded-full p-3 text-white pointer">Go Back</a>
+                    <a href="./index.html" class="bg-orange text-white rounded-full p-3  pointer">Go Back</a>
                 </div>
             </div>
 
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous">
         </script>
-        <script type="text/javascript" src="./app.js">
+        <script type="text/javascript" src="./assets/js/app.js">
         </script>
     </body>
 </html>
